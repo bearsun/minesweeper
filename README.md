@@ -6,3 +6,5 @@ To play, run:
 python minesweeper.py
 
 Updated: 12/20/18
+
+todo: unit test maybe? (or may not...)
