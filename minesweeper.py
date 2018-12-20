@@ -11,7 +11,7 @@ def minesweeper(stdscr):
 	curses.curs_set(0)
 	# clear screen
 	stdscr.clear()
-	#curses.resizeterm(30, 50)
+	curses.resizeterm(30, 50)
 	while True:
 		# initialize a new mine field with basic parameters
 		cmap = mmap()
