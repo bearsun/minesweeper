@@ -5,6 +5,8 @@ from mmap import mmap
 from take_resp import take_resp
 
 def minesweeper(stdscr):
+	""" play minesweeper in your bash terminal!"""
+	
 	# hide cursor
 	curses.curs_set(0)
 	# clear screen
