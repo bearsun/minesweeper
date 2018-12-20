@@ -3,7 +3,6 @@ import curses, sys
 from display import draw_field, print_info, disp_result
 from mmap import mmap
 from take_resp import take_resp
-from curses import wrapper
 
 def minesweeper(stdscr):
 	# hide cursor
@@ -28,7 +27,7 @@ if __name__== "__main__":
 		# resize the window for space (dosen't work on Mac)
 		#subprocess.call(['resize', '-s', '30', '50'])
 		# wrapper for curses
-		wrapper(minesweeper)
+		curses.wrapper(minesweeper)
 	except KeyboardInterrupt:
 		sys.exit(0)
 	except curses.error: #not enough space for drawing
